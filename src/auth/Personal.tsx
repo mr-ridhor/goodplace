@@ -70,11 +70,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                         render={({ field }) => (
                           <FormItem>
                             <FormControl>
-                              <Input
-                                placeholder="Enter your First Name"
-                                className=""
-                                {...field}
-                              />
+                              <Input className="" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -89,11 +85,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                         render={({ field }) => (
                           <FormItem>
                             <FormControl>
-                              <Input
-                                placeholder="Enter your Last Name"
-                                className=""
-                                {...field}
-                              />
+                              <Input className="" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -109,11 +101,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input
-                              placeholder="Enter your Title"
-                              className=""
-                              {...field}
-                            />
+                            <Input className="" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -128,11 +116,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input
-                              placeholder="Enter your Email"
-                              className=""
-                              {...field}
-                            />
+                            <Input className="" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -147,11 +131,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input
-                              placeholder="Enter your phone number"
-                              className=""
-                              {...field}
-                            />
+                            <Input className="" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -166,11 +146,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input
-                              placeholder="Enter your  linkedIn"
-                              className=""
-                              {...field}
-                            />
+                            <Input className="" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -189,7 +165,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                               <Selects
                                 {...field}
                                 className={""}
-                                placeholder="Select a Country"
+                                placeholder="Ireland"
                                 options={[
                                   { value: "s", label: "Fr" },
                                   { value: "s4", label: "eng" },
@@ -212,7 +188,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                               <Selects
                                 {...field}
                                 className={""}
-                                placeholder="Select a City"
+                                placeholder="Dublin"
                                 options={[
                                   { value: "s", label: "Fr" },
                                   { value: "s4", label: "eng" },
@@ -233,11 +209,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input
-                              placeholder="Enter your  address"
-                              className=""
-                              {...field}
-                            />
+                            <Input className="" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>

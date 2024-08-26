@@ -1,7 +1,7 @@
 import React from "react";
 
 import Logo from "./svgComponent/Logo";
-
+import Topo from "./assets/Topology1.png";
 import User from "./svgComponent/User";
 import Company from "./svgComponent/Company";
 import Users from "./svgComponent/Users";
@@ -22,27 +22,32 @@ const Leftpane: React.FC<LeftpaneProps> = ({ currentForm }) => {
   ];
   return (
     <div
-      className="h-screen md:w-[200px] space-y-5 top-0 hidden md:block  fixed bg-gradient-to-b from-[#82e1ed] from-10% via-s[#62cfde] via-30% to-[#4bc1d1] to-90%
+      className="h-screen md:w-[300px] space-y-5 top-0 hidden md:block  fixed bg-gradient-to-b from-[#82e1ed] from-10% via-s[#62cfde] via-30% to-[#4bc1d1] to-90%
 "
     >
       <div className="w-full  md:flex items-center justify-start hidden">
         <Logo />
       </div>
-      {pane.map((item) => {
-        return (
-          <div className="flex  gap-x-2 items-center px-2">
-            <div className="">{item.icon}</div>
-            <div
-              className={` ${
-                item.id === currentForm ? "text-black" : "text-[#00454F]/30"
-              } `}
-            >
-              <p className="text-sm">{item.step}</p>
-              <p className="text-sm">{item.name}</p>
+      <div className="h-fit">
+        {pane.map((item) => {
+          return (
+            <div className="flex  gap-x-2 items-center px-2">
+              <div className="">{item.icon}</div>
+              <div
+                className={` ${
+                  item.id === currentForm ? "text-black" : "text-[#00454F]/30"
+                } `}
+              >
+                <p className="text-sm">{item.step}</p>
+                <p className="text-sm">{item.name}</p>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
+      <div className=" justify-self-end">
+        <img src={Topo} className=" object-cover" />
+      </div>
     </div>
   );
 };
