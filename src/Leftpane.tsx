@@ -22,7 +22,7 @@ const Leftpane: React.FC<LeftpaneProps> = ({ currentForm }) => {
   ];
   return (
     <div
-      className="h-screen md:w-[200px] space-y-5 top-0 hidden md:fixed bg-gradient-to-b from-[#82e1ed] from-10% via-s[#62cfde] via-30% to-[#4bc1d1] to-90%
+      className="h-screen md:w-[200px] space-y-5 top-0 hidden md:block  fixed bg-gradient-to-b from-[#82e1ed] from-10% via-s[#62cfde] via-30% to-[#4bc1d1] to-90%
 "
     >
       <div className="w-full  md:flex items-center justify-start hidden">
