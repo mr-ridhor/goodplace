@@ -40,8 +40,8 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
   };
   return (
     <div className="h-full overflow-auto no-scrollbar">
-      <Card className="border-0 no-scrollbar  rounded-none w-full flex flex-col items-center ustify-center">
-        <div className="xl:w-[40%] lg:w-[60%] w-full">
+      <Card className="border-0 no-scrollbar shadow-none rounded-none w-full flex flex-col items-center ustify-center">
+        <div className="w-full lg:w-[50%] xl:w-[510px]">
           <CardHeader className="w-full ">
             <CardTitle className="space-y-4">
               <strong className="text-sm xl:text-2xl">

@@ -27,11 +27,13 @@ const plans = [
 const Sub: React.FC<Props> = () => {
   return (
     <div className="">
-      <Card className="border-0 no-scrollbar shadow-none rounded-none w-full flex flex-col items-center ustify-center">
-        <div className="md:w-[45% w-full]">
+      <Card className="my-8 border-0 no-scrollbar shadow-none rounded-none w-full flex flex-col items-center ustify-center">
+        <div className="w-full lg:w-[50%] xl:w-[510px]">
           <CardHeader className="w-full ">
-            <CardTitle>
-              <strong className="text-sm xl:text-2xl">Subscription plan</strong>
+            <CardTitle className="">
+              <strong className="text-sm xl:text-2xl ">
+                Subscription plan
+              </strong>
               <p className="font-light text-sm xl:text-lg">
                 Select your plan to be able to use GoodPlace CRM{" "}
               </p>

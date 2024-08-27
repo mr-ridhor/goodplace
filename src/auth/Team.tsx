@@ -37,7 +37,7 @@ const Team: React.FC<Props> = ({ nextForm }) => {
   return (
     <div className="">
       <Card className="border-0 no-scrollbar shadow-none  rounded-none w-full flex flex-col items-center ustify-center">
-        <div className="w-full lg:w-[55%]">
+        <div className="w-full lg:w-[50%] xl:w-[510px]">
           <CardHeader className="w-full ">
             <CardTitle>
               <strong className="text-sm lg:text-lgtext-sm xl:text-2xl">
