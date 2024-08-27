@@ -22,31 +22,33 @@ const Leftpane: React.FC<LeftpaneProps> = ({ currentForm }) => {
   ];
   return (
     <div
-      className="h-screen md:w-[260px] space-y-5 top-0 hidden md:block  fixed bg-gradient-to-b from-[#82e1ed] from-10% via-s[#62cfde] via-30% to-[#4bc1d1] to-90%
+      className="h-screen md:w-[240px] space-y-5 top-0 hidden md:block  fixed bg-gradient-to-b from-[#82e1ed] from-10% via-s[#62cfde] via-30% to-[#4bc1d1] to-90%
 "
     >
       <div className="w-full  md:flex items-center justify-start hidden">
         <Logo />
       </div>
-      <div className="h-fit">
+      <div className="h-fit w-full space-y-4">
         {pane.map((item) => {
           return (
-            <div className="flex  gap-x-2 items-center px-2">
-              <div className="">{item.icon}</div>
+            <div className="flex h-[35px]  xl:h-[50px] xl:space-y-6 gap-x-2 items-center justify-center  w-full">
+              <div className="w-[20%] justify-end flex items-center h-full">
+                {item.icon}
+              </div>
               <div
-                className={` ${
+                className={`w-[150px] items-center h-full ${
                   item.id === currentForm ? "text-black" : "text-[#00454F]/30"
                 } `}
               >
-                <p className="text-sm">{item.step}</p>
-                <p className="text-sm">{item.name}</p>
+                <p className="text-[10px] lg:text-sm">{item.step}</p>
+                <p className="text-[10px] lg:text-sm ">{item.name}</p>
               </div>
             </div>
           );
         })}
       </div>
-      <div className=" justify-self-end">
-        <img src={Topo} className=" object-cover" />
+      <div className=" absolute bottom-0 h-[30%]">
+        <img src={Topo} className="ob w-full " />
       </div>
     </div>
   );

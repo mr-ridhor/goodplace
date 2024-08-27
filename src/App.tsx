@@ -37,7 +37,7 @@ function App() {
     }
   };
   return (
-    <div className=" overflow-y-aut no-scrollbar flex  max-h-scree">
+    <div className=" overflow-y-aut0 no-scrollbar flex  max-h-scree">
       <Leftpane currentForm={currentForm} />
 
       <Main curr={currentForm}>{renderForm()}</Main>

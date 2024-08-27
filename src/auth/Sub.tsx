@@ -31,8 +31,8 @@ const Sub: React.FC<Props> = () => {
         <div className="md:w-[45% w-full]">
           <CardHeader className="w-full ">
             <CardTitle>
-              <strong className="text-sm lg:text-lg">Subscription plan</strong>
-              <p className="font-normal text-sm">
+              <strong className="text-sm xl:text-2xl">Subscription plan</strong>
+              <p className="font-light text-sm xl:text-lg">
                 Select your plan to be able to use GoodPlace CRM{" "}
               </p>
             </CardTitle>

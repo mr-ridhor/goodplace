@@ -33,12 +33,12 @@ const Register: React.FC<Props> = ({ nextForm }) => {
   };
   return (
     <div className="">
-      <Card className="border-0 no-scrollbar  rounded-none w-full flex flex-col items-center ustify-center">
-        <div className="w-full lg:w-[40%]">
+      <Card className="border-0 no-scrollbar shadow-none  rounded-none w-full flex flex-col items-center ustify-center">
+        <div className="w-full lg:w-[55%]">
           <CardHeader className="w-full ">
             <CardTitle>
               <strong className="text-sm lg:text-lg">Log in credentials</strong>
-              <p className="font-normal text-sm">
+              <p className="font-light text-sm xl:text-lg">
                 Enter your team log in email and password to complete sign up
                 process
               </p>

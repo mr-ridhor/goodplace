@@ -40,11 +40,13 @@ const Verification: React.FC<Props> = ({ nextForm }) => {
   return (
     <div className="border-0 ">
       <Card className="border-0 shadow-none no-scrollbar h-full rounded-none w-full flex flex-col items-center">
-        <div className="w-full lg:w-[40%]">
+        <div className="w-full lg:w-[50%] xl:w-[510px]">
           <CardHeader className="text-center w-[100%]">
             <CardTitle className="w-full">
-              <strong className="text-lg">Email Verification</strong>
-              <p className="font-normal text-sm">
+              <strong className="text-sm xl:text-2xl">
+                Email Verification
+              </strong>
+              <p className="font-light text-sm xl:text-lg">
                 Check your email for a 5-digit OTP, input it below to verify
                 your email.
               </p>
@@ -67,14 +69,15 @@ const Verification: React.FC<Props> = ({ nextForm }) => {
                       <FormControl>
                         <div className="w-full  flex justify-between">
                           <InputOTP
+                            containerClassName="w-full justify-between flex space-x-3"
                             maxLength={5}
-                            className="flex w-full space-x-5"
+                            className="flex w-full justify-between "
                             {...field}
                           >
                             {[...Array(5)].map((_, index) => (
-                              <InputOTPGroup key={index}>
+                              <InputOTPGroup key={index} className="">
                                 <InputOTPSlot
-                                  className="text-center lg:mx-3 mx-2.5 xl:h-[50px]  xl:w-[50px] border rounded-md p-2"
+                                  className="text-center    border rounded-md p-2"
                                   index={index}
                                 />
                               </InputOTPGroup>

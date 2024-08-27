@@ -39,15 +39,15 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
     console.log(data);
   };
   return (
-    <div className="">
+    <div className="h-full overflow-auto no-scrollbar">
       <Card className="border-0 no-scrollbar  rounded-none w-full flex flex-col items-center ustify-center">
-        <div className="lg:w-[40%] w-full">
+        <div className="xl:w-[40%] lg:w-[60%] w-full">
           <CardHeader className="w-full ">
-            <CardTitle>
-              <strong className="text-sm lg:text-lg">
+            <CardTitle className="space-y-4">
+              <strong className="text-sm xl:text-2xl">
                 Personal Information
               </strong>
-              <p className="font-normal text-sm">
+              <p className="font-light text-sm xl:text-lg">
                 Complete your sign up process and get started with a 1 month
                 free trial
               </p>
@@ -60,10 +60,10 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="w-full h-full flex flex-col gap-y-3"
               >
-                <div className="">
+                <div className="space-y-4">
                   <div className="w-full  flex gap-x-4">
                     <div className="w-1/2 space-y-2">
-                      <FormLabel>First Name</FormLabel>
+                      <FormLabel className="font-normal">First Name</FormLabel>
                       <FormField
                         control={form.control}
                         name="firstName"
@@ -78,7 +78,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                       />
                     </div>
                     <div className="w-1/2 space-y-2">
-                      <FormLabel>Last Name</FormLabel>
+                      <FormLabel className="font-normal">Last Name</FormLabel>
                       <FormField
                         control={form.control}
                         name="lastName"
@@ -94,7 +94,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                     </div>
                   </div>
                   <div className="w-full space-y-2">
-                    <FormLabel>Title</FormLabel>
+                    <FormLabel className="font-normal">Title</FormLabel>
                     <FormField
                       control={form.control}
                       name="title"
@@ -109,7 +109,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                     />
                   </div>
                   <div className="w-full space-y-2">
-                    <FormLabel>Email Address</FormLabel>
+                    <FormLabel className="font-normal">Email Address</FormLabel>
                     <FormField
                       control={form.control}
                       name="email"
@@ -124,7 +124,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                     />
                   </div>
                   <div className="w-full space-y-2">
-                    <FormLabel>Phone</FormLabel>
+                    <FormLabel className="font-normal">Phone</FormLabel>
                     <FormField
                       control={form.control}
                       name="phone"
@@ -138,24 +138,41 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                       )}
                     />
                   </div>
-                  <div className="w-full space-y-2">
-                    <FormLabel>LinkedIn</FormLabel>
-                    <FormField
-                      control={form.control}
-                      name="linkedIn"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormControl>
-                            <Input className="" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                  <div className="w-full gap-x-4 flex items-center">
+                    <div className="w-1/2">
+                      <FormLabel className="font-normal">LinkedIn</FormLabel>
+                      <FormField
+                        control={form.control}
+                        name="linkedIn"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormControl>
+                              <Input className="" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+                    <div className="w-1/2">
+                      <FormLabel className="font-normal">X</FormLabel>
+                      <FormField
+                        control={form.control}
+                        name="linkedIn"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormControl>
+                              <Input className="" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
                   </div>
                   <div className="w-full  flex gap-x-4">
                     <div className="w-1/2 space-y-2">
-                      <FormLabel>Country</FormLabel>
+                      <FormLabel className="font-normal">Country</FormLabel>
                       <FormField
                         control={form.control}
                         name="country"
@@ -178,7 +195,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                       />
                     </div>
                     <div className="w-1/2 space-y-2">
-                      <FormLabel>City</FormLabel>
+                      <FormLabel className="font-normal">City</FormLabel>
                       <FormField
                         control={form.control}
                         name="city"
@@ -202,7 +219,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                     </div>
                   </div>
                   <div className="w-full space-y-2">
-                    <FormLabel>Address</FormLabel>
+                    <FormLabel className="font-normal">Address</FormLabel>
                     <FormField
                       control={form.control}
                       name="address"
@@ -219,7 +236,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                 </div>
                 <Button
                   onClick={nextForm}
-                  className="w-[40%] h-12  gap-x-1 rounded-md "
+                  className="w-[50%] h-12 mt-2  gap-x-1 rounded-md "
                   type="submit"
                 >
                   {/* {form.formState.isSubmitting ? (

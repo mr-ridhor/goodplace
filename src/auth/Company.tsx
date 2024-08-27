@@ -43,14 +43,14 @@ const Company: React.FC<Props> = ({ nextForm }) => {
   };
   return (
     <div className="">
-      <Card className="border-0 no-scrollbar  rounded-none w-full flex flex-col items-center ustify-center">
-        <div className="lg:w-[44%] w-full">
+      <Card className="border-0 no-scrollbar shadow-none rounded-none w-full flex flex-col items-center ustify-center">
+        <div className="lg:w-[55%] w-full">
           <CardHeader className="w-full ">
             <CardTitle>
-              <strong className="text-sm lg:text-lg">
+              <strong className="text-sm xl:text-2xl">
                 Company Information
               </strong>
-              <p className="font-normal text-sm">
+              <p className="font-light text-sm xl:text-lg">
                 Please fill in the required fields to let us know more about
                 your company.
               </p>
@@ -247,7 +247,7 @@ const Company: React.FC<Props> = ({ nextForm }) => {
                     />
                   </div>
                 </div>
-                <div className="w-full flex gap-x-1">
+                <div className="w-full flex gap-x-4">
                   <div className="w-1/2 space-y-2">
                     <FormLabel className="lg:text-base text-[11px]">
                       Revenue (Previous year, $K)
@@ -283,7 +283,7 @@ const Company: React.FC<Props> = ({ nextForm }) => {
                     />
                   </div>
                 </div>
-                <div className="w-full flex gap-x-2 items-center">
+                <div className="w-full flex gap-x-4 items-center">
                   <div className="w-1/2 space-y-2">
                     <FormLabel className="lg:text-base text-[11px]">
                       Gross profit (Previous year, $K)
@@ -319,7 +319,7 @@ const Company: React.FC<Props> = ({ nextForm }) => {
                     />
                   </div>
                 </div>
-                <div className="w-full flex gap-x-2 items-center">
+                <div className="w-full flex gap-x-4 items-center">
                   <div className="w-1/2 space-y-1">
                     <FormLabel className="lg:text-base text-[11px]">
                       EBITDA (Previous year, $K)
