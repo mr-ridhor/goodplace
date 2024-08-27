@@ -7,10 +7,10 @@ interface MainProps {
 
 const Main: React.FC<MainProps> = ({ children, curr }) => {
   return (
-    <div className="md:ml-[240px] w-screen no-scrollbar ">
-      <div className="h-screen no-scrollbar space-y-">
+    <div className="md:ml-[240px] w-screen no-scrollbar h-screen overflow-y-hidden">
+      <div className="h-screen no-scrollbar overflow-y-hidden">
         {curr !== 6 && (
-          <div className="flex bg-white items-center px-4 sticky top-0 w-full h-[80px]">
+          <div className="flex bg-white  items-center px-4 sticky top-0 w-full h-[80px]">
             <div className="justify-end w-full flex hover:underline cursor-pointer">
               Already a member? Sign in
             </div>
