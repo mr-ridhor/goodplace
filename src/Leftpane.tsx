@@ -47,7 +47,7 @@ const Leftpane: React.FC<LeftpaneProps> = ({ currentForm }) => {
           );
         })}
       </div>
-      <div className=" absolute bottom-0 h-[30%]">
+      <div className=" absolute bottom-0 h-[25%]">
         <img src={Topo} className="ob w-full " />
       </div>
     </div>
