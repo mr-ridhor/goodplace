@@ -8,4 +8,5 @@ export type personalType = {
   country: string;
   city: string;
   address: string;
+  x: string;
 };

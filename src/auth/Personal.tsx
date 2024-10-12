@@ -33,6 +33,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
       title: "",
       linkedIn: "",
       phone: "",
+      x: "",
     },
   });
   const onSubmit = (data: personalType) => {
@@ -158,7 +159,7 @@ const Personal: React.FC<Props> = ({ nextForm }) => {
                       <FormLabel className="font-normal">X</FormLabel>
                       <FormField
                         control={form.control}
-                        name="linkedIn"
+                        name="x"
                         render={({ field }) => (
                           <FormItem>
                             <FormControl>
